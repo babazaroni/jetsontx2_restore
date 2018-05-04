@@ -17,5 +17,11 @@ sudo apt-get install build-essential libgl1-mesa-dev
 
 sudo apt-get install qt5-default qtcreator -y
 
+# from https://www.youtube.com/watch?v=f_NU8P9jxLs
+# To Configure QT
+# in Compiler add GCC, and specify ARM
+# in Kits, add new kit
+# in Configure project specify kit
+
 
 
