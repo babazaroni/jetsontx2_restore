@@ -6,7 +6,7 @@ cd
 
 sudo apt-get update
 
-sudo apt-get install libi2c-dev i2c-tools #libi2c-dev not found
+sudo apt-get install libi2c-dev i2c-tools
 
 sudo i2cdetect -y -r 1
 mkdir bebop;cd bebop;mkdir translation;cd translation
