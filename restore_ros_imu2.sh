@@ -22,7 +22,7 @@ catkin_make
 # install the visualizer
 # instal from indigo was not found, use kinetic
 #sudo apt-get install ros-indigo-razor-imu-9dof
-sudo apt-get install ros-kinetic-razor-imu-9dof
+#sudo apt-get install ros-kinetic-razor-imu-9dof
 
 #or install from source.  This one works
 cd catkin_ws/src
