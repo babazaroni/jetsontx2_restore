@@ -1,8 +1,9 @@
 #!/bin/bash
 
-sudo apt-get install g++ git-all libpng12-dev libjpeg-dev libeigen3-dev libboost-atomic-dev libboost-chrono-dev libboost-date-time-dev libboost-dev libboost-program-options-dev libboost-exception-dev libboost-filesystem-dev libboost-serialization-dev libboost-system-dev libboost-thread-dev libboost-timer-dev libtbb-dev libdevil-dev libboost-test-dev
+sudo apt-get install g++ git-all libpng12-dev libjpeg-dev libeigen3-dev libboost-atomic-dev libboost-chrono-dev libboost-date-time-dev libboost-dev libboost-program-options-dev libboost-exception-dev libboost-filesystem-dev libboost-serialization-dev libboost-system-dev libboost-thread-dev libboost-timer-dev libtbb-dev libdevil-dev libboost-test-dev -y
 
 echo "to copile on jetson, need to copy sse2neon.h to CCTag/src/cctag/geometry from https://github.com/jratcliff63367/sse2neon/blob/master/SSE2NEON.h"
+echo "sse2neon should already be in cctag, but to compile on intel, need to comment out #include sse2neon.h and replace with #include <emmintrin.h>"
 
 
 cd $HOME/bebop/translation
