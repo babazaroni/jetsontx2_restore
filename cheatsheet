@@ -1,4 +1,5 @@
 
+find / -name "filename"
 
 Add all files to git
 
@@ -15,3 +16,6 @@ roscd robot_pose_ekf #takes you to the package location
 
 rostopic list
 rostopic echo /imu  # display the topic messages
+
+rosrun tf view_frames  #generates the map transform pdf
+evince frames.pdf  #to view map
